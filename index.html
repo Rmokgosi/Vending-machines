@@ -4,32 +4,92 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Vending Machine</title> <!--Web page title -->
+    <title>Vending Machine</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abhaya+Libre">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aclonica">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Adamina">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aguafina+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akronim">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aladin">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alef">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+    <link rel="stylesheet" href="assets/css/Edit-Form.css">
+    <link rel="stylesheet" href="assets/css/Google-Style-Login.css">
+    <link rel="stylesheet" href="assets/css/gradient-navbar-1.css">
+    <link rel="stylesheet" href="assets/css/gradient-navbar.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body>
-	 <h1 class="text-center flash animated" style="font-size: 27px;color: rgb(0,0,0);"> Vending Machine</h1>
- 
-        <div class="text">
-			<button value= "Coca-Cola" id="coca-cola">1. Coca-Cola</button>
-			<button value= "Fanta Orange" id="fanta">2. Fanta Orange</button>
-			<button value= "Samba Beef" id="samba">3. Samba Beef</button>
-			<button value= "Doritos Sweet Chilli" id="doritos">4. Doritos Sweet Chili</button>
-			<button value= "Kit Kat" id="kitkat">5. Kit Kat</button>
-			<button value= "Launch Bar" id="launch bar">6. Launch Bar</button>
-			<button value= "7Bottle Water" id="water" >7. Bottle Water</button> 
-			</br>
-			<hr>
-			<form >
-			<span>Enter your iteam selection(Number of item): </span>
-			<input type = "text" name="item_num" id="item_num" placeholder ="0" value ="0" />
-			<br />
-			<span>Enter Amount: </span>
-			<input type = "text" name="amount" id="amount" placeholder ="0" value ="0" />
-			</form>
-			
-			<button value="Cancel" id="cancel">Cancel</button>
-             
-	
+<body class="text-center" style="font-family: Akronim, cursive;filter: saturate(97%);background-color: #ffffff;">
+    <div class="login-card" style="background-color: rgb(255,255,255);height: 395px;width: 413px;max-width: 500px;font-family: 'Alegreya Sans SC', sans-serif;opacity: 1;min-width: 0px;">
+        <div class="col">
+            <h1 style="color: rgb(70,152,227);">Vending Machine</h1>
+        </div>
+        <div class="col text-center" style="font-family: Aladin, cursive;width: 346px;">
+            <div class="table-responsive table-bordered text-center border-white" style="font-size: 15px;font-family: 'Alegreya Sans SC', sans-serif;width: 372px;margin-right: -32px;margin-left: -32px;">
+                <table class="table table-striped table-bordered table-sm">
+                    <thead>
+                        <tr>
+                            <th style="background-color: #f4ea0b;">1. Coca Cola</th>
+                            <th style="background-color: #ff7a00;">2.Fanta Orange</th>
+                            <th style="background-color: #59d31f;">3.Kit-Kat</th>
+                            <th style="background-color: #f20404;">4. Launch Bar</th>
+                            <th style="background-color: #4617ff;">5.Simba Beef</th>
+                            <th style="background-color: #ffffff;">6.Doritos Sweet</th>
+                            <th style="background-color: #719a70;">7.Bottle water</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="background-color: #f4ea0b;">R10.00</td>
+                            <td style="background-color: #ff7a00;">R10.00</td>
+                            <td style="background-color: #59d31f;">R12.00</td>
+                            <td style="background-color: #f20404;">R12.00</td>
+                            <td style="background-color: #4617ff;">R8.00</td>
+                            <td style="background-color: #ffffff;">R8.00</td>
+                            <td style="background-color: #719a70;">R9.00</td>
+                        </tr>
+                        <tr></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <form class="form-input"><span class="reauth">
+		</span><input class="border rounded-0 form-control" type="text" id="item_num" required="" placeholder="Enter a item number" autofocus="" name="selection">
+			   <input class="border rounded-0 form-control" type="text" id="amount" required="" placeholder="Enter Your Amount">
+
+			<div class="checkbox"></div><button class="btn btn-primary btn-block btn-lg border rounded btn-signin" type="submit" onclick = "getItem()" style="background-color: rgb(72,152,224);">Enter</button>
+            <div class="checkbox"></div><button class="btn btn-primary btn-block btn-lg border rounded btn-signin" type="submit" style="background-color: rgb(72,152,224);">Cancel</button>
+			<div class="checkbox"></div><button class="btn btn-primary btn-block btn-lg border rounded btn-signin" type="submit" style="background-color: rgb(72,152,224);">Refresh</button>
+		</form>
+
+	</div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/vending.js"></script>
+
+</body>
 
 </html>
